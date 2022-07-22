@@ -21,5 +21,10 @@ public class Enemy : MonoBehaviour
         // Follow the player
         // Normalized - so that the magnitude won't increase with respect to the enemys distance from the player 
         playerRb.AddForce(goalDirection * speed);
+
+        if (transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
     }
 }
