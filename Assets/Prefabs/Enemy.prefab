@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1213599941950082404}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213599941950082398}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 260dcbbda7e99488782b614388ae5de9, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
