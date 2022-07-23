@@ -6,6 +6,7 @@ public class RotateCameraX : MonoBehaviour
 {
     private float speed = 200;
     public GameObject player;
+    public ParticleSystem particleEffect;
 
     // Update is called once per frame
     void Update()
@@ -14,6 +15,17 @@ public class RotateCameraX : MonoBehaviour
         transform.Rotate(Vector3.up, horizontalInput * speed * Time.deltaTime);
 
         transform.position = player.transform.position; // Move focal point with player
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            particleEffect.Play();
+            particleEffect.transform.position = player.transform.position;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            particleEffect.Stop();
+        }
 
     }
 }
